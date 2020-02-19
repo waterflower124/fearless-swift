@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231686FD2270055200056956 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231686FC2270055200056956 /* VideoPlayerViewController.swift */; };
+		231686FF2270177000056956 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231686FE2270177000056956 /* CommentTableViewCell.swift */; };
+		231687012271401400056956 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231687002271401400056956 /* GoogleService-Info.plist */; };
+		235BEB6C226E336700BAC7A5 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB6B226E336700BAC7A5 /* ForgotPasswordViewController.swift */; };
+		235BEB6E226E6E8C00BAC7A5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB6D226E6E8C00BAC7A5 /* MenuViewController.swift */; };
+		235BEB70226E709200BAC7A5 /* menu_top_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB6F226E709200BAC7A5 /* menu_top_bg.jpg */; };
+		235BEB73226E710F00BAC7A5 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB72226E710F00BAC7A5 /* Global.swift */; };
+		235BEB75226E723400BAC7A5 /* empty_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB74226E723300BAC7A5 /* empty_avatar.png */; };
+		235BEB7B226E75CE00BAC7A5 /* menu_aboutus.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB76226E75C500BAC7A5 /* menu_aboutus.png */; };
+		235BEB7C226E75CE00BAC7A5 /* menu_category.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB77226E75CB00BAC7A5 /* menu_category.png */; };
+		235BEB7D226E75CE00BAC7A5 /* menu_favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB78226E75CC00BAC7A5 /* menu_favorite.png */; };
+		235BEB7E226E75CE00BAC7A5 /* menu_signout.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB79226E75CC00BAC7A5 /* menu_signout.png */; };
+		235BEB7F226E75CE00BAC7A5 /* menu_contactus.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB7A226E75CD00BAC7A5 /* menu_contactus.png */; };
+		235BEB81226E9EEB00BAC7A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB80226E9EEA00BAC7A5 /* BaseViewController.swift */; };
+		235BEB83226E9FCA00BAC7A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB82226E9FCA00BAC7A5 /* CategoryViewController.swift */; };
+		235BEB86226EB6A700BAC7A5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB85226EB6A700BAC7A5 /* FavoritesViewController.swift */; };
+		235BEB88226EB75100BAC7A5 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB87226EB75100BAC7A5 /* AboutUsViewController.swift */; };
+		235BEB8A226EB7F100BAC7A5 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB89226EB7F100BAC7A5 /* ContactUsViewController.swift */; };
+		235BEB8D226EEE3B00BAC7A5 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB8C226EEE3B00BAC7A5 /* CategoryTableViewCell.swift */; };
+		235BEB8F226F9CE700BAC7A5 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB8E226F9CE700BAC7A5 /* SubCategoryViewController.swift */; };
+		235BEB91226FAAA000BAC7A5 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB90226FAAA000BAC7A5 /* VideoListViewController.swift */; };
+		235BEB94226FAE6800BAC7A5 /* favor_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB92226FAE6100BAC7A5 /* favor_full.png */; };
+		235BEB95226FAE6800BAC7A5 /* favor_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB93226FAE6700BAC7A5 /* favor_empty.png */; };
+		235BEB97226FB5FB00BAC7A5 /* VideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB96226FB5FB00BAC7A5 /* VideoListTableViewCell.swift */; };
+		23EC4722226DBEFC00E6645B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC4721226DBEFC00E6645B /* AppDelegate.swift */; };
+		23EC4727226DBEFC00E6645B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4725226DBEFC00E6645B /* Main.storyboard */; };
+		23EC4729226DBF0300E6645B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4728226DBF0300E6645B /* Assets.xcassets */; };
+		23EC472C226DBF0300E6645B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EC472A226DBF0300E6645B /* LaunchScreen.storyboard */; };
+		23EC4737226DBF0300E6645B /* FearlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC4736226DBF0300E6645B /* FearlessTests.swift */; };
+		23EC4742226DBF0400E6645B /* FearlessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC4741226DBF0400E6645B /* FearlessUITests.swift */; };
+		23EC4751226DC16D00E6645B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC4750226DC16D00E6645B /* SignInViewController.swift */; };
+		23EC4753226DC4F900E6645B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC4752226DC4F900E6645B /* SplashViewController.swift */; };
+		23EC4756226DC6E100E6645B /* splash_screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4755226DC6E100E6645B /* splash_screen.jpg */; };
+		23EC4758226DC90400E6645B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4757226DC90400E6645B /* logo.png */; };
+		23EC475E226DFB7D00E6645B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC475D226DFB7D00E6645B /* SignUpViewController.swift */; };
+		BCA817E24E139DD50848C0CC /* Pods_Fearless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E90A07E347988027A250E2D /* Pods_Fearless.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23EC4733226DBF0300E6645B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23EC4716226DBEFC00E6645B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23EC471D226DBEFC00E6645B;
+			remoteInfo = Fearless;
+		};
+		23EC473E226DBF0300E6645B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23EC4716226DBEFC00E6645B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23EC471D226DBEFC00E6645B;
+			remoteInfo = Fearless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		231686FC2270055200056956 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		231686FE2270177000056956 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		231687002271401400056956 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		235BEB6B226E336700BAC7A5 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		235BEB6D226E6E8C00BAC7A5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		235BEB6F226E709200BAC7A5 /* menu_top_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_top_bg.jpg; sourceTree = "<group>"; };
+		235BEB72226E710F00BAC7A5 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		235BEB74226E723300BAC7A5 /* empty_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_avatar.png; sourceTree = "<group>"; };
+		235BEB76226E75C500BAC7A5 /* menu_aboutus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_aboutus.png; sourceTree = "<group>"; };
+		235BEB77226E75CB00BAC7A5 /* menu_category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_category.png; sourceTree = "<group>"; };
+		235BEB78226E75CC00BAC7A5 /* menu_favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_favorite.png; sourceTree = "<group>"; };
+		235BEB79226E75CC00BAC7A5 /* menu_signout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_signout.png; sourceTree = "<group>"; };
+		235BEB7A226E75CD00BAC7A5 /* menu_contactus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_contactus.png; sourceTree = "<group>"; };
+		235BEB80226E9EEA00BAC7A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		235BEB82226E9FCA00BAC7A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		235BEB85226EB6A700BAC7A5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		235BEB87226EB75100BAC7A5 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		235BEB89226EB7F100BAC7A5 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		235BEB8C226EEE3B00BAC7A5 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		235BEB8E226F9CE700BAC7A5 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
+		235BEB90226FAAA000BAC7A5 /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		235BEB92226FAE6100BAC7A5 /* favor_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favor_full.png; sourceTree = "<group>"; };
+		235BEB93226FAE6700BAC7A5 /* favor_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favor_empty.png; sourceTree = "<group>"; };
+		235BEB96226FB5FB00BAC7A5 /* VideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewCell.swift; sourceTree = "<group>"; };
+		23EC471E226DBEFC00E6645B /* Fearless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fearless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EC4721226DBEFC00E6645B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23EC4726226DBEFC00E6645B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23EC4728226DBF0300E6645B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23EC472B226DBF0300E6645B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23EC472D226DBF0300E6645B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EC4732226DBF0300E6645B /* FearlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FearlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EC4736226DBF0300E6645B /* FearlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FearlessTests.swift; sourceTree = "<group>"; };
+		23EC4738226DBF0300E6645B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EC473D226DBF0300E6645B /* FearlessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FearlessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EC4741226DBF0400E6645B /* FearlessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FearlessUITests.swift; sourceTree = "<group>"; };
+		23EC4743226DBF0400E6645B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EC4750226DC16D00E6645B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		23EC4752226DC4F900E6645B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		23EC4755226DC6E100E6645B /* splash_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash_screen.jpg; sourceTree = "<group>"; };
+		23EC4757226DC90400E6645B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		23EC475D226DFB7D00E6645B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		320A4C81261FF3C8A87BA991 /* Pods_FearlessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FearlessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED7F49EA5912A2D2E804EAA /* Pods_FearlessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FearlessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E90A07E347988027A250E2D /* Pods_Fearless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fearless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56495717BE8BFDC6C14A7EC /* Pods-Fearless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fearless.debug.xcconfig"; path = "Target Support Files/Pods-Fearless/Pods-Fearless.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0E443496ED43161ABEBF8E /* Pods-Fearless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fearless.release.xcconfig"; path = "Target Support Files/Pods-Fearless/Pods-Fearless.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23EC471B226DBEFC00E6645B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA817E24E139DD50848C0CC /* Pods_Fearless.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EC472F226DBF0300E6645B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EC473A226DBF0300E6645B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C51BAA5EF2D66E8A8ED69A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E90A07E347988027A250E2D /* Pods_Fearless.framework */,
+				320A4C81261FF3C8A87BA991 /* Pods_FearlessTests.framework */,
+				7ED7F49EA5912A2D2E804EAA /* Pods_FearlessUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235BEB71226E70FB00BAC7A5 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				235BEB72226E710F00BAC7A5 /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		235BEB8B226EED4A00BAC7A5 /* tableviewcell */ = {
+			isa = PBXGroup;
+			children = (
+				235BEB8C226EEE3B00BAC7A5 /* CategoryTableViewCell.swift */,
+				235BEB96226FB5FB00BAC7A5 /* VideoListTableViewCell.swift */,
+				231686FE2270177000056956 /* CommentTableViewCell.swift */,
+			);
+			path = tableviewcell;
+			sourceTree = "<group>";
+		};
+		23EC4715226DBEFC00E6645B = {
+			isa = PBXGroup;
+			children = (
+				23EC4720226DBEFC00E6645B /* Fearless */,
+				23EC4735226DBF0300E6645B /* FearlessTests */,
+				23EC4740226DBF0300E6645B /* FearlessUITests */,
+				23EC471F226DBEFC00E6645B /* Products */,
+				4B04C5F2585F045F7A266CDC /* Pods */,
+				02C51BAA5EF2D66E8A8ED69A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23EC471F226DBEFC00E6645B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23EC471E226DBEFC00E6645B /* Fearless.app */,
+				23EC4732226DBF0300E6645B /* FearlessTests.xctest */,
+				23EC473D226DBF0300E6645B /* FearlessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23EC4720226DBEFC00E6645B /* Fearless */ = {
+			isa = PBXGroup;
+			children = (
+				235BEB8B226EED4A00BAC7A5 /* tableviewcell */,
+				235BEB71226E70FB00BAC7A5 /* Global */,
+				23EC4754226DC6CB00E6645B /* assets */,
+				23EC474F226DC14200E6645B /* screens */,
+				23EC4721226DBEFC00E6645B /* AppDelegate.swift */,
+				23EC4725226DBEFC00E6645B /* Main.storyboard */,
+				23EC4728226DBF0300E6645B /* Assets.xcassets */,
+				23EC472A226DBF0300E6645B /* LaunchScreen.storyboard */,
+				23EC472D226DBF0300E6645B /* Info.plist */,
+				231687002271401400056956 /* GoogleService-Info.plist */,
+			);
+			path = Fearless;
+			sourceTree = "<group>";
+		};
+		23EC4735226DBF0300E6645B /* FearlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				23EC4736226DBF0300E6645B /* FearlessTests.swift */,
+				23EC4738226DBF0300E6645B /* Info.plist */,
+			);
+			path = FearlessTests;
+			sourceTree = "<group>";
+		};
+		23EC4740226DBF0300E6645B /* FearlessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23EC4741226DBF0400E6645B /* FearlessUITests.swift */,
+				23EC4743226DBF0400E6645B /* Info.plist */,
+			);
+			path = FearlessUITests;
+			sourceTree = "<group>";
+		};
+		23EC474F226DC14200E6645B /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				235BEB80226E9EEA00BAC7A5 /* BaseViewController.swift */,
+				23EC4750226DC16D00E6645B /* SignInViewController.swift */,
+				23EC4752226DC4F900E6645B /* SplashViewController.swift */,
+				23EC475D226DFB7D00E6645B /* SignUpViewController.swift */,
+				235BEB6B226E336700BAC7A5 /* ForgotPasswordViewController.swift */,
+				235BEB6D226E6E8C00BAC7A5 /* MenuViewController.swift */,
+				235BEB82226E9FCA00BAC7A5 /* CategoryViewController.swift */,
+				235BEB85226EB6A700BAC7A5 /* FavoritesViewController.swift */,
+				235BEB87226EB75100BAC7A5 /* AboutUsViewController.swift */,
+				235BEB89226EB7F100BAC7A5 /* ContactUsViewController.swift */,
+				235BEB8E226F9CE700BAC7A5 /* SubCategoryViewController.swift */,
+				235BEB90226FAAA000BAC7A5 /* VideoListViewController.swift */,
+				231686FC2270055200056956 /* VideoPlayerViewController.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		23EC4754226DC6CB00E6645B /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				23EC4759226DCC3F00E6645B /* image */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		23EC4759226DCC3F00E6645B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				235BEB93226FAE6700BAC7A5 /* favor_empty.png */,
+				235BEB92226FAE6100BAC7A5 /* favor_full.png */,
+				235BEB76226E75C500BAC7A5 /* menu_aboutus.png */,
+				235BEB77226E75CB00BAC7A5 /* menu_category.png */,
+				235BEB7A226E75CD00BAC7A5 /* menu_contactus.png */,
+				235BEB78226E75CC00BAC7A5 /* menu_favorite.png */,
+				235BEB79226E75CC00BAC7A5 /* menu_signout.png */,
+				235BEB74226E723300BAC7A5 /* empty_avatar.png */,
+				235BEB6F226E709200BAC7A5 /* menu_top_bg.jpg */,
+				23EC4755226DC6E100E6645B /* splash_screen.jpg */,
+				23EC4757226DC90400E6645B /* logo.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		4B04C5F2585F045F7A266CDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C56495717BE8BFDC6C14A7EC /* Pods-Fearless.debug.xcconfig */,
+				ED0E443496ED43161ABEBF8E /* Pods-Fearless.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23EC471D226DBEFC00E6645B /* Fearless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23EC4746226DBF0400E6645B /* Build configuration list for PBXNativeTarget "Fearless" */;
+			buildPhases = (
+				CF40978DEB2348AFCABFDA8D /* [CP] Check Pods Manifest.lock */,
+				23EC471A226DBEFC00E6645B /* Sources */,
+				23EC471B226DBEFC00E6645B /* Frameworks */,
+				23EC471C226DBEFC00E6645B /* Resources */,
+				9A26242EFFA6E2BA1279B43B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fearless;
+			productName = Fearless;
+			productReference = 23EC471E226DBEFC00E6645B /* Fearless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23EC4731226DBF0300E6645B /* FearlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23EC4749226DBF0400E6645B /* Build configuration list for PBXNativeTarget "FearlessTests" */;
+			buildPhases = (
+				23EC472E226DBF0300E6645B /* Sources */,
+				23EC472F226DBF0300E6645B /* Frameworks */,
+				23EC4730226DBF0300E6645B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23EC4734226DBF0300E6645B /* PBXTargetDependency */,
+			);
+			name = FearlessTests;
+			productName = FearlessTests;
+			productReference = 23EC4732226DBF0300E6645B /* FearlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23EC473C226DBF0300E6645B /* FearlessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23EC474C226DBF0400E6645B /* Build configuration list for PBXNativeTarget "FearlessUITests" */;
+			buildPhases = (
+				23EC4739226DBF0300E6645B /* Sources */,
+				23EC473A226DBF0300E6645B /* Frameworks */,
+				23EC473B226DBF0300E6645B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23EC473F226DBF0300E6645B /* PBXTargetDependency */,
+			);
+			name = FearlessUITests;
+			productName = FearlessUITests;
+			productReference = 23EC473D226DBF0300E6645B /* FearlessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23EC4716226DBEFC00E6645B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Water Flower";
+				TargetAttributes = {
+					23EC471D226DBEFC00E6645B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					23EC4731226DBF0300E6645B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 23EC471D226DBEFC00E6645B;
+					};
+					23EC473C226DBF0300E6645B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 23EC471D226DBEFC00E6645B;
+					};
+				};
+			};
+			buildConfigurationList = 23EC4719226DBEFC00E6645B /* Build configuration list for PBXProject "Fearless" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23EC4715226DBEFC00E6645B;
+			productRefGroup = 23EC471F226DBEFC00E6645B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23EC471D226DBEFC00E6645B /* Fearless */,
+				23EC4731226DBF0300E6645B /* FearlessTests */,
+				23EC473C226DBF0300E6645B /* FearlessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23EC471C226DBEFC00E6645B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235BEB7C226E75CE00BAC7A5 /* menu_category.png in Resources */,
+				235BEB75226E723400BAC7A5 /* empty_avatar.png in Resources */,
+				235BEB7D226E75CE00BAC7A5 /* menu_favorite.png in Resources */,
+				23EC472C226DBF0300E6645B /* LaunchScreen.storyboard in Resources */,
+				235BEB7B226E75CE00BAC7A5 /* menu_aboutus.png in Resources */,
+				235BEB70226E709200BAC7A5 /* menu_top_bg.jpg in Resources */,
+				235BEB7E226E75CE00BAC7A5 /* menu_signout.png in Resources */,
+				23EC4758226DC90400E6645B /* logo.png in Resources */,
+				23EC4729226DBF0300E6645B /* Assets.xcassets in Resources */,
+				235BEB7F226E75CE00BAC7A5 /* menu_contactus.png in Resources */,
+				235BEB95226FAE6800BAC7A5 /* favor_empty.png in Resources */,
+				23EC4756226DC6E100E6645B /* splash_screen.jpg in Resources */,
+				23EC4727226DBEFC00E6645B /* Main.storyboard in Resources */,
+				231687012271401400056956 /* GoogleService-Info.plist in Resources */,
+				235BEB94226FAE6800BAC7A5 /* favor_full.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EC4730226DBF0300E6645B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EC473B226DBF0300E6645B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A26242EFFA6E2BA1279B43B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fearless/Pods-Fearless-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fearless/Pods-Fearless-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF40978DEB2348AFCABFDA8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fearless-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23EC471A226DBEFC00E6645B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EC4753226DC4F900E6645B /* SplashViewController.swift in Sources */,
+				231686FD2270055200056956 /* VideoPlayerViewController.swift in Sources */,
+				235BEB6E226E6E8C00BAC7A5 /* MenuViewController.swift in Sources */,
+				235BEB6C226E336700BAC7A5 /* ForgotPasswordViewController.swift in Sources */,
+				23EC4722226DBEFC00E6645B /* AppDelegate.swift in Sources */,
+				23EC475E226DFB7D00E6645B /* SignUpViewController.swift in Sources */,
+				235BEB81226E9EEB00BAC7A5 /* BaseViewController.swift in Sources */,
+				23EC4751226DC16D00E6645B /* SignInViewController.swift in Sources */,
+				235BEB8F226F9CE700BAC7A5 /* SubCategoryViewController.swift in Sources */,
+				235BEB83226E9FCA00BAC7A5 /* CategoryViewController.swift in Sources */,
+				235BEB86226EB6A700BAC7A5 /* FavoritesViewController.swift in Sources */,
+				235BEB88226EB75100BAC7A5 /* AboutUsViewController.swift in Sources */,
+				235BEB73226E710F00BAC7A5 /* Global.swift in Sources */,
+				231686FF2270177000056956 /* CommentTableViewCell.swift in Sources */,
+				235BEB91226FAAA000BAC7A5 /* VideoListViewController.swift in Sources */,
+				235BEB97226FB5FB00BAC7A5 /* VideoListTableViewCell.swift in Sources */,
+				235BEB8D226EEE3B00BAC7A5 /* CategoryTableViewCell.swift in Sources */,
+				235BEB8A226EB7F100BAC7A5 /* ContactUsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EC472E226DBF0300E6645B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EC4737226DBF0300E6645B /* FearlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EC4739226DBF0300E6645B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EC4742226DBF0400E6645B /* FearlessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23EC4734226DBF0300E6645B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23EC471D226DBEFC00E6645B /* Fearless */;
+			targetProxy = 23EC4733226DBF0300E6645B /* PBXContainerItemProxy */;
+		};
+		23EC473F226DBF0300E6645B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23EC471D226DBEFC00E6645B /* Fearless */;
+			targetProxy = 23EC473E226DBF0300E6645B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23EC4725226DBEFC00E6645B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23EC4726226DBEFC00E6645B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23EC472A226DBF0300E6645B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23EC472B226DBF0300E6645B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23EC4744226DBF0400E6645B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23EC4745226DBF0400E6645B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23EC4747226DBF0400E6645B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56495717BE8BFDC6C14A7EC /* Pods-Fearless.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUF4PLRJTW;
+				INFOPLIST_FILE = Fearless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.fearless.capital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23EC4748226DBF0400E6645B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0E443496ED43161ABEBF8E /* Pods-Fearless.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUF4PLRJTW;
+				INFOPLIST_FILE = Fearless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.fearless.capital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23EC474A226DBF0400E6645B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FearlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waterflower125.com.FearlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fearless.app/Fearless";
+			};
+			name = Debug;
+		};
+		23EC474B226DBF0400E6645B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FearlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waterflower125.com.FearlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fearless.app/Fearless";
+			};
+			name = Release;
+		};
+		23EC474D226DBF0400E6645B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FearlessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waterflower125.com.FearlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fearless;
+			};
+			name = Debug;
+		};
+		23EC474E226DBF0400E6645B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FearlessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waterflower125.com.FearlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fearless;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23EC4719226DBEFC00E6645B /* Build configuration list for PBXProject "Fearless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EC4744226DBF0400E6645B /* Debug */,
+				23EC4745226DBF0400E6645B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23EC4746226DBF0400E6645B /* Build configuration list for PBXNativeTarget "Fearless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EC4747226DBF0400E6645B /* Debug */,
+				23EC4748226DBF0400E6645B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23EC4749226DBF0400E6645B /* Build configuration list for PBXNativeTarget "FearlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EC474A226DBF0400E6645B /* Debug */,
+				23EC474B226DBF0400E6645B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23EC474C226DBF0400E6645B /* Build configuration list for PBXNativeTarget "FearlessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EC474D226DBF0400E6645B /* Debug */,
+				23EC474E226DBF0400E6645B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23EC4716226DBEFC00E6645B /* Project object */;
+}

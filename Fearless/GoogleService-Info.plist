@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>12983604737-mmebrgej1pn0m4ahlqvst5m9u10avj2k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.12983604737-mmebrgej1pn0m4ahlqvst5m9u10avj2k</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>12983604737-858vjnfiqg8hi7j9ad70a988hlodq6ve.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYmAS1iv-PPEDpQZhgHSNpuLhWGR8BxUo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>12983604737</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fearless.capital</string>
+	<key>PROJECT_ID</key>
+	<string>fearlesscapital-4a92a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fearlesscapital-4a92a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:12983604737:ios:9b35aa1c48a1b7d7</string>
+	<key>DATABASE_URL</key>
+	<string>https://fearlesscapital-4a92a.firebaseio.com</string>
+</dict>
+</plist>
