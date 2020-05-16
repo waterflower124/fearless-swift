@@ -78,7 +78,11 @@ class FavoritesViewController: BaseViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return 200
+        } else {
+            return 100
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -133,11 +137,20 @@ class FavoritesViewController: BaseViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let videoplayerVC = mainStoryboard.instantiateViewController(withIdentifier: "VideoPlayerViewController") as! VideoPlayerViewController
-        videoplayerVC.selected_video = self.video_array[indexPath.row]
-        videoplayerVC.passVC = "favorVC"
-        self.navigationController?.pushViewController(videoplayerVC, animated: true)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+            let videoplayerVC = mainStoryboard.instantiateViewController(withIdentifier: "VideoPlayeriPadViewController") as! VideoPlayeriPadViewController
+            videoplayerVC.selected_video = self.video_array[indexPath.row]
+            videoplayerVC.passVC = "favorVC"
+            videoplayerVC.video_array = []
+            self.navigationController?.pushViewController(videoplayerVC, animated: true)
+        } else {
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let videoplayerVC = mainStoryboard.instantiateViewController(withIdentifier: "VideoPlayerViewController") as! VideoPlayerViewController
+            videoplayerVC.selected_video = self.video_array[indexPath.row]
+            videoplayerVC.passVC = "favorVC"
+            self.navigationController?.pushViewController(videoplayerVC, animated: true)
+        }
     }
     
     func startActivityIndicator() {

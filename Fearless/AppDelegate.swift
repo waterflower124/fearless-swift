@@ -9,18 +9,33 @@
 import UIKit
 import Firebase
 import UserNotifications
+import MediaPlayer
+import AVKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var storyboard = UIStoryboard()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            print("-----------ipad--------------")
+            
+            let font = UIFont.systemFont(ofSize: 25)
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
+
+            storyboard = UIStoryboard(name: "MainiPad", bundle: nil)
+            self.window!.rootViewController = storyboard.instantiateInitialViewController()!
+        } else {
+            print("----------iphone-----------")
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.window!.rootViewController = storyboard.instantiateInitialViewController()!
+        }
+        self.window!.makeKeyAndVisible()
+      
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
@@ -39,10 +54,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerForRemoteNotifications()
         
-        
         FirebaseApp.configure()
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playback, mode: .moviePlayback)
+        }
+        catch {
+          print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
+        
         return true
     }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -52,10 +76,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        
+        if let rootViewController = self.window?.rootViewController as? UINavigationController {
+            if let viewController = rootViewController.viewControllers.last as? VideoPlayerViewController {
+                viewController.disconnectAVPlayer()
+            } else if let viewController = rootViewController.viewControllers.last as? VideoPlayeriPadViewController {
+                viewController.disconnectAVPlayer()
+            }
+        }
+
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        if let rootViewController = self.window?.rootViewController as? UINavigationController {
+            if let viewController = rootViewController.viewControllers.last as? VideoPlayerViewController {
+                viewController.reconnectAVPlayer()
+            } else if let viewController = rootViewController.viewControllers.last as? VideoPlayeriPadViewController {
+                viewController.reconnectAVPlayer()
+            }
+        }
+
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

@@ -90,7 +90,10 @@ class CategoryViewController: BaseViewController, UITableViewDelegate, UITableVi
         cell?.countTextField.text = String(describing: self.record_array[indexPath.row]["count"] as! Int)
         cell?.titleLabel.text = self.record_array[indexPath.row]["title"] as? String
         let image_url = URL(string: self.record_array[indexPath.row]["img"] as! String)!
-        cell?.imageview.kf.setImage(with: image_url)
+        if let imageurlstring = self.record_array[indexPath.row]["img"] as? String {
+            let image_url = URL(string: imageurlstring.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
+            cell?.imageview.kf.setImage(with: image_url)
+        }
         return cell!
     }
     
@@ -99,7 +102,12 @@ class CategoryViewController: BaseViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var mainStoryboard = UIStoryboard()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+        } else {
+            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        }
         let subcategoryVC = mainStoryboard.instantiateViewController(withIdentifier: "SubCategoryViewController") as! SubCategoryViewController
         subcategoryVC.selected_subcate = self.record_array[indexPath.row]
         self.navigationController?.pushViewController(subcategoryVC, animated: true)

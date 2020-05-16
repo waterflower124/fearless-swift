@@ -9,5 +9,6 @@ target 'Fearless' do
   pod 'Firebase/Messaging'
   pod 'FSPagerView'
   pod 'Kingfisher', '~> 5.0'
+  pod 'Toast-Swift', '~> 5.0.1'
   
 end

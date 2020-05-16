@@ -156,9 +156,13 @@ class SplashViewController: UIViewController, FSPagerViewDataSource, FSPagerView
                                 if let data = responseDic["data"] as? Dictionary<String, Any> {
                                     Global.firstname = data["first_name"] as! String
                                     Global.lastname = data["surname"] as! String
-                                    Global.avatar_url = data["profile_pic"] as! String
+                                    if let profile_pic = data["profile_pic"] as? String {
+                                        Global.avatar_url = profile_pic
+                                    } else {
+                                        Global.avatar_url = ""
+                                    }
                                     Global.user_id = data["num"] as! String
-                                    
+                                    Global.is_purchased = data["is_purchase"] as! String
                                 }
                                 succ_bool = true
                             } else {
@@ -174,9 +178,17 @@ class SplashViewController: UIViewController, FSPagerViewDataSource, FSPagerView
                 DispatchQueue.main.async {
                     self.stopActivityIndicator()
                     if succ_bool {
-                        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let categoryVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
-                        self.navigationController?.pushViewController(categoryVC, animated: true)
+                        var mainStoryboard = UIStoryboard()
+                        if UIDevice.current.userInterfaceIdiom == .pad {
+                            mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+                            let categoryVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryiPadViewController") as! CategoryiPadViewController
+                            self.navigationController?.pushViewController(categoryVC, animated: true)
+                        } else {
+                            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let categoryVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+                            self.navigationController?.pushViewController(categoryVC, animated: true)
+                        }
+                        
                     } else {
                         self.createAlert(title: "Warning!", message: "Network error.")
                     }
@@ -184,7 +196,12 @@ class SplashViewController: UIViewController, FSPagerViewDataSource, FSPagerView
             }
             task_login.resume();
         } else {
-            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            var mainStoryboard = UIStoryboard()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+            } else {
+                mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            }
             let signinVC = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
             self.navigationController?.pushViewController(signinVC, animated: true)
         }
@@ -192,7 +209,12 @@ class SplashViewController: UIViewController, FSPagerViewDataSource, FSPagerView
     }
     
     @IBAction func signupButtonAction(_ sender: Any) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var mainStoryboard = UIStoryboard()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+        } else {
+            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        }
         let signupVC = mainStoryboard.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         self.navigationController?.pushViewController(signupVC, animated: true)
     }

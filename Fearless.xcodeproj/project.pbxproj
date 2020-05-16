@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2313FC5F227FE228003B0592 /* menu_purchase.png in Resources */ = {isa = PBXBuildFile; fileRef = 2313FC5E227FE21A003B0592 /* menu_purchase.png */; };
+		2313FC62227FEB17003B0592 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313FC61227FEB17003B0592 /* IAPService.swift */; };
+		2313FC64227FEE3F003B0592 /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313FC63227FEE3F003B0592 /* IAPProduct.swift */; };
 		231686FD2270055200056956 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231686FC2270055200056956 /* VideoPlayerViewController.swift */; };
 		231686FF2270177000056956 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231686FE2270177000056956 /* CommentTableViewCell.swift */; };
 		231687012271401400056956 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231687002271401400056956 /* GoogleService-Info.plist */; };
@@ -31,6 +34,12 @@
 		235BEB94226FAE6800BAC7A5 /* favor_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB92226FAE6100BAC7A5 /* favor_full.png */; };
 		235BEB95226FAE6800BAC7A5 /* favor_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 235BEB93226FAE6700BAC7A5 /* favor_empty.png */; };
 		235BEB97226FB5FB00BAC7A5 /* VideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB96226FB5FB00BAC7A5 /* VideoListTableViewCell.swift */; };
+		237161B4229B931400976236 /* CategoryiPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237161B3229B931400976236 /* CategoryiPadViewController.swift */; };
+		237161B7229B941E00976236 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237161B6229B941E00976236 /* CategoryCollectionViewCell.swift */; };
+		237161B9229B9A5E00976236 /* SubCategoryiPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237161B8229B9A5E00976236 /* SubCategoryiPadViewController.swift */; };
+		23E339D52296D6DC0036B588 /* MainiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E339D42296D6DC0036B588 /* MainiPad.storyboard */; };
+		23E339D72296D7CE0036B588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E339D62296D7CE0036B588 /* ViewController.swift */; };
+		23E339D92296ED7B0036B588 /* VideoPlayeriPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E339D82296ED7B0036B588 /* VideoPlayeriPadViewController.swift */; };
 		23EC4722226DBEFC00E6645B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC4721226DBEFC00E6645B /* AppDelegate.swift */; };
 		23EC4727226DBEFC00E6645B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4725226DBEFC00E6645B /* Main.storyboard */; };
 		23EC4729226DBF0300E6645B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4728226DBF0300E6645B /* Assets.xcassets */; };
@@ -42,6 +51,9 @@
 		23EC4756226DC6E100E6645B /* splash_screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4755226DC6E100E6645B /* splash_screen.jpg */; };
 		23EC4758226DC90400E6645B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4757226DC90400E6645B /* logo.png */; };
 		23EC475E226DFB7D00E6645B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC475D226DFB7D00E6645B /* SignUpViewController.swift */; };
+		23FA6657246E424200C994DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FA6656246E424200C994DD /* AudioToolbox.framework */; };
+		23FA665A246EAEBE00C994DD /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 23FA6658246EAEBE00C994DD /* backward.png */; };
+		23FA665B246EAEBE00C994DD /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 23FA6659246EAEBE00C994DD /* forward.png */; };
 		BCA817E24E139DD50848C0CC /* Pods_Fearless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E90A07E347988027A250E2D /* Pods_Fearless.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +75,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2313FC5E227FE21A003B0592 /* menu_purchase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_purchase.png; sourceTree = "<group>"; };
+		2313FC61227FEB17003B0592 /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
+		2313FC63227FEE3F003B0592 /* IAPProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProduct.swift; sourceTree = "<group>"; };
 		231686FC2270055200056956 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		231686FE2270177000056956 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		231687002271401400056956 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -87,6 +102,12 @@
 		235BEB92226FAE6100BAC7A5 /* favor_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favor_full.png; sourceTree = "<group>"; };
 		235BEB93226FAE6700BAC7A5 /* favor_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favor_empty.png; sourceTree = "<group>"; };
 		235BEB96226FB5FB00BAC7A5 /* VideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewCell.swift; sourceTree = "<group>"; };
+		237161B3229B931400976236 /* CategoryiPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryiPadViewController.swift; sourceTree = "<group>"; };
+		237161B6229B941E00976236 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		237161B8229B9A5E00976236 /* SubCategoryiPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryiPadViewController.swift; sourceTree = "<group>"; };
+		23E339D42296D6DC0036B588 /* MainiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainiPad.storyboard; sourceTree = "<group>"; };
+		23E339D62296D7CE0036B588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23E339D82296ED7B0036B588 /* VideoPlayeriPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayeriPadViewController.swift; sourceTree = "<group>"; };
 		23EC471E226DBEFC00E6645B /* Fearless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fearless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EC4721226DBEFC00E6645B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23EC4726226DBEFC00E6645B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +125,10 @@
 		23EC4755226DC6E100E6645B /* splash_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash_screen.jpg; sourceTree = "<group>"; };
 		23EC4757226DC90400E6645B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		23EC475D226DFB7D00E6645B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		23FA6655246E424200C994DD /* Fearless.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fearless.entitlements; sourceTree = "<group>"; };
+		23FA6656246E424200C994DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		23FA6658246EAEBE00C994DD /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backward.png; sourceTree = "<group>"; };
+		23FA6659246EAEBE00C994DD /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		320A4C81261FF3C8A87BA991 /* Pods_FearlessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FearlessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED7F49EA5912A2D2E804EAA /* Pods_FearlessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FearlessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E90A07E347988027A250E2D /* Pods_Fearless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fearless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA817E24E139DD50848C0CC /* Pods_Fearless.framework in Frameworks */,
+				23FA6657246E424200C994DD /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,11 +166,21 @@
 		02C51BAA5EF2D66E8A8ED69A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23FA6656246E424200C994DD /* AudioToolbox.framework */,
 				8E90A07E347988027A250E2D /* Pods_Fearless.framework */,
 				320A4C81261FF3C8A87BA991 /* Pods_FearlessTests.framework */,
 				7ED7F49EA5912A2D2E804EAA /* Pods_FearlessUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2313FC60227FEB05003B0592 /* IAPService */ = {
+			isa = PBXGroup;
+			children = (
+				2313FC61227FEB17003B0592 /* IAPService.swift */,
+				2313FC63227FEE3F003B0592 /* IAPProduct.swift */,
+			);
+			path = IAPService;
 			sourceTree = "<group>";
 		};
 		235BEB71226E70FB00BAC7A5 /* Global */ = {
@@ -163,6 +199,14 @@
 				231686FE2270177000056956 /* CommentTableViewCell.swift */,
 			);
 			path = tableviewcell;
+			sourceTree = "<group>";
+		};
+		237161B5229B93FF00976236 /* collectionviewcell */ = {
+			isa = PBXGroup;
+			children = (
+				237161B6229B941E00976236 /* CategoryCollectionViewCell.swift */,
+			);
+			path = collectionviewcell;
 			sourceTree = "<group>";
 		};
 		23EC4715226DBEFC00E6645B = {
@@ -190,16 +234,21 @@
 		23EC4720226DBEFC00E6645B /* Fearless */ = {
 			isa = PBXGroup;
 			children = (
+				23FA6655246E424200C994DD /* Fearless.entitlements */,
+				237161B5229B93FF00976236 /* collectionviewcell */,
+				2313FC60227FEB05003B0592 /* IAPService */,
 				235BEB8B226EED4A00BAC7A5 /* tableviewcell */,
 				235BEB71226E70FB00BAC7A5 /* Global */,
 				23EC4754226DC6CB00E6645B /* assets */,
 				23EC474F226DC14200E6645B /* screens */,
 				23EC4721226DBEFC00E6645B /* AppDelegate.swift */,
 				23EC4725226DBEFC00E6645B /* Main.storyboard */,
+				23E339D42296D6DC0036B588 /* MainiPad.storyboard */,
 				23EC4728226DBF0300E6645B /* Assets.xcassets */,
 				23EC472A226DBF0300E6645B /* LaunchScreen.storyboard */,
 				23EC472D226DBF0300E6645B /* Info.plist */,
 				231687002271401400056956 /* GoogleService-Info.plist */,
+				23E339D62296D7CE0036B588 /* ViewController.swift */,
 			);
 			path = Fearless;
 			sourceTree = "<group>";
@@ -232,12 +281,15 @@
 				235BEB6B226E336700BAC7A5 /* ForgotPasswordViewController.swift */,
 				235BEB6D226E6E8C00BAC7A5 /* MenuViewController.swift */,
 				235BEB82226E9FCA00BAC7A5 /* CategoryViewController.swift */,
+				237161B3229B931400976236 /* CategoryiPadViewController.swift */,
+				235BEB8E226F9CE700BAC7A5 /* SubCategoryViewController.swift */,
+				237161B8229B9A5E00976236 /* SubCategoryiPadViewController.swift */,
+				235BEB89226EB7F100BAC7A5 /* ContactUsViewController.swift */,
 				235BEB85226EB6A700BAC7A5 /* FavoritesViewController.swift */,
 				235BEB87226EB75100BAC7A5 /* AboutUsViewController.swift */,
-				235BEB89226EB7F100BAC7A5 /* ContactUsViewController.swift */,
-				235BEB8E226F9CE700BAC7A5 /* SubCategoryViewController.swift */,
 				235BEB90226FAAA000BAC7A5 /* VideoListViewController.swift */,
 				231686FC2270055200056956 /* VideoPlayerViewController.swift */,
+				23E339D82296ED7B0036B588 /* VideoPlayeriPadViewController.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -253,6 +305,8 @@
 		23EC4759226DCC3F00E6645B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				23FA6658246EAEBE00C994DD /* backward.png */,
+				23FA6659246EAEBE00C994DD /* forward.png */,
 				235BEB93226FAE6700BAC7A5 /* favor_empty.png */,
 				235BEB92226FAE6100BAC7A5 /* favor_full.png */,
 				235BEB76226E75C500BAC7A5 /* menu_aboutus.png */,
@@ -260,6 +314,7 @@
 				235BEB7A226E75CD00BAC7A5 /* menu_contactus.png */,
 				235BEB78226E75CC00BAC7A5 /* menu_favorite.png */,
 				235BEB79226E75CC00BAC7A5 /* menu_signout.png */,
+				2313FC5E227FE21A003B0592 /* menu_purchase.png */,
 				235BEB74226E723300BAC7A5 /* empty_avatar.png */,
 				235BEB6F226E709200BAC7A5 /* menu_top_bg.jpg */,
 				23EC4755226DC6E100E6645B /* splash_screen.jpg */,
@@ -347,6 +402,11 @@
 				TargetAttributes = {
 					23EC471D226DBEFC00E6645B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					23EC4731226DBF0300E6645B = {
 						CreatedOnToolsVersion = 10.1;
@@ -386,6 +446,9 @@
 				235BEB7C226E75CE00BAC7A5 /* menu_category.png in Resources */,
 				235BEB75226E723400BAC7A5 /* empty_avatar.png in Resources */,
 				235BEB7D226E75CE00BAC7A5 /* menu_favorite.png in Resources */,
+				2313FC5F227FE228003B0592 /* menu_purchase.png in Resources */,
+				23FA665A246EAEBE00C994DD /* backward.png in Resources */,
+				23E339D52296D6DC0036B588 /* MainiPad.storyboard in Resources */,
 				23EC472C226DBF0300E6645B /* LaunchScreen.storyboard in Resources */,
 				235BEB7B226E75CE00BAC7A5 /* menu_aboutus.png in Resources */,
 				235BEB70226E709200BAC7A5 /* menu_top_bg.jpg in Resources */,
@@ -396,6 +459,7 @@
 				235BEB95226FAE6800BAC7A5 /* favor_empty.png in Resources */,
 				23EC4756226DC6E100E6645B /* splash_screen.jpg in Resources */,
 				23EC4727226DBEFC00E6645B /* Main.storyboard in Resources */,
+				23FA665B246EAEBE00C994DD /* forward.png in Resources */,
 				231687012271401400056956 /* GoogleService-Info.plist in Resources */,
 				235BEB94226FAE6800BAC7A5 /* favor_full.png in Resources */,
 			);
@@ -424,24 +488,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fearless/Pods-Fearless-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Fearless/Pods-Fearless-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Fearless/Pods-Fearless-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -479,9 +530,11 @@
 			files = (
 				23EC4753226DC4F900E6645B /* SplashViewController.swift in Sources */,
 				231686FD2270055200056956 /* VideoPlayerViewController.swift in Sources */,
+				2313FC64227FEE3F003B0592 /* IAPProduct.swift in Sources */,
 				235BEB6E226E6E8C00BAC7A5 /* MenuViewController.swift in Sources */,
 				235BEB6C226E336700BAC7A5 /* ForgotPasswordViewController.swift in Sources */,
 				23EC4722226DBEFC00E6645B /* AppDelegate.swift in Sources */,
+				2313FC62227FEB17003B0592 /* IAPService.swift in Sources */,
 				23EC475E226DFB7D00E6645B /* SignUpViewController.swift in Sources */,
 				235BEB81226E9EEB00BAC7A5 /* BaseViewController.swift in Sources */,
 				23EC4751226DC16D00E6645B /* SignInViewController.swift in Sources */,
@@ -491,8 +544,13 @@
 				235BEB88226EB75100BAC7A5 /* AboutUsViewController.swift in Sources */,
 				235BEB73226E710F00BAC7A5 /* Global.swift in Sources */,
 				231686FF2270177000056956 /* CommentTableViewCell.swift in Sources */,
+				237161B7229B941E00976236 /* CategoryCollectionViewCell.swift in Sources */,
+				237161B9229B9A5E00976236 /* SubCategoryiPadViewController.swift in Sources */,
+				237161B4229B931400976236 /* CategoryiPadViewController.swift in Sources */,
 				235BEB91226FAAA000BAC7A5 /* VideoListViewController.swift in Sources */,
+				23E339D92296ED7B0036B588 /* VideoPlayeriPadViewController.swift in Sources */,
 				235BEB97226FB5FB00BAC7A5 /* VideoListTableViewCell.swift in Sources */,
+				23E339D72296D7CE0036B588 /* ViewController.swift in Sources */,
 				235BEB8D226EEE3B00BAC7A5 /* CategoryTableViewCell.swift in Sources */,
 				235BEB8A226EB7F100BAC7A5 /* ContactUsViewController.swift in Sources */,
 			);
@@ -670,17 +728,16 @@
 			baseConfigurationReference = C56495717BE8BFDC6C14A7EC /* Pods-Fearless.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Fearless/Fearless.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LUF4PLRJTW;
+				DEVELOPMENT_TEAM = UA5Y68AXWT;
 				INFOPLIST_FILE = Fearless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.fearless.capital;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.fearless.capital.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -691,17 +748,16 @@
 			baseConfigurationReference = ED0E443496ED43161ABEBF8E /* Pods-Fearless.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Fearless/Fearless.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LUF4PLRJTW;
+				DEVELOPMENT_TEAM = UA5Y68AXWT;
 				INFOPLIST_FILE = Fearless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.fearless.capital;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.fearless.capital.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -713,6 +769,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA5Y68AXWT;
 				INFOPLIST_FILE = FearlessTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,6 +790,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA5Y68AXWT;
 				INFOPLIST_FILE = FearlessTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

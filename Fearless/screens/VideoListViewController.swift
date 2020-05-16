@@ -81,15 +81,23 @@ class VideoListViewController: BaseViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return 200
+        } else {
+            return 100
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "videolisttableviewcell") as? VideoListTableViewCell
         cell!.selectionStyle = UITableViewCell.SelectionStyle.none
 
-        let image_url = URL(string: self.video_array[indexPath.row]["img"] as! String)!
-        cell?.videoimageview.kf.setImage(with: image_url)
+        if let imageurlstring = self.video_array[indexPath.row]["img"] as? String {
+            let image_url = URL(string: imageurlstring.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
+            cell?.videoimageview.kf.setImage(with: image_url)
+        } else {
+            
+        }
         
         let isFav = self.video_array[indexPath.row]["isFav"] as! Int
         let video_id = self.video_array[indexPath.row]["num"] as? String
@@ -148,11 +156,30 @@ class VideoListViewController: BaseViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let videoplayerVC = mainStoryboard.instantiateViewController(withIdentifier: "VideoPlayerViewController") as! VideoPlayerViewController
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            var mainStoryboard = UIStoryboard()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+            } else {
+                mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            }
+            let videoplayerVC = mainStoryboard.instantiateViewController(withIdentifier: "VideoPlayeriPadViewController") as! VideoPlayeriPadViewController
             videoplayerVC.selected_video = self.video_array[indexPath.row]
-        videoplayerVC.passVC = "videolistVC"
-        self.navigationController?.pushViewController(videoplayerVC, animated: true)
+            videoplayerVC.passVC = "videolistVC"
+            videoplayerVC.video_array = self.video_array
+            self.navigationController?.pushViewController(videoplayerVC, animated: true)
+        } else {
+            var mainStoryboard = UIStoryboard()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+            } else {
+                mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            }
+            let videoplayerVC = mainStoryboard.instantiateViewController(withIdentifier: "VideoPlayerViewController") as! VideoPlayerViewController
+            videoplayerVC.selected_video = self.video_array[indexPath.row]
+            videoplayerVC.passVC = "videolistVC"
+            self.navigationController?.pushViewController(videoplayerVC, animated: true)
+        }
     }
     
 

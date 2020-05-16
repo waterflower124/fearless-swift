@@ -14,6 +14,12 @@ class CommentTableViewCell: UITableViewCell {
     @IBOutlet weak var comment_avatarimageview: UIImageView!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var imageLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var playtimeButton: UIButton!
+    
+    var timeButtonAction: (() -> Void)? = nil
+    @IBAction func timeButtonTap(_ sender: Any) {
+        timeButtonAction?()
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

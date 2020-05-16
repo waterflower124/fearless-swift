@@ -14,7 +14,9 @@ class Global {
     static var lastname: String = ""
     static var avatar_url: String = ""
     static var user_id: String = ""
+    static var is_purchased: String = "0"
     static var fcm_token: String = "czBlESpYHW0:APA91bFxg-FDHhSydiIqBs3RF8Ev4JRZ1IJMGr2u6kTFfIucYcnVnxIkBuHbvhdPaKIBX-GIKV8OJFdqYL2FJxpEaeNdafIIkXiQhgsiHTR5iyZ25j-IUh6vxfOMxnsiIZcOvfEEfWux"
     
-    static var base_url: String = "http://fearlesscapital.terminusa.com/tube_admin/webservices/"
+//    static var base_url: String = "http://fearlesscapital.terminusa.com/tube_admin/webservices/"
+    static var base_url: String = "http://fearlesscapital.traveltimevr.com/tube_admin/webservices/"
 }

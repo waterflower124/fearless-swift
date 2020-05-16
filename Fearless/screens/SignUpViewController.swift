@@ -129,7 +129,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             DispatchQueue.main.async {
                 self.stopActivityIndicator()
                 if succ_bool {
-                    let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    var mainStoryboard = UIStoryboard()
+                    if UIDevice.current.userInterfaceIdiom == .pad {
+                        mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+                    } else {
+                        mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    }
                     let signinVC = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
                     self.navigationController?.pushViewController(signinVC, animated: true)
                 } else {
@@ -150,7 +155,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         let alert = UIAlertController(title: title, message:message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)
             if type {
-                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                var mainStoryboard = UIStoryboard()
+                if UIDevice.current.userInterfaceIdiom == .pad {
+                    mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+                } else {
+                    mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                }
                 let signinVC = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
                 self.navigationController?.pushViewController(signinVC, animated: true)
             }

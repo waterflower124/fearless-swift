@@ -48,8 +48,10 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signinButtonAction(_ sender: Any) {
-        let email = self.emailTextField.text!
-        let password = self.passwordTextField.text!
+        var email = self.emailTextField.text!
+        var password = self.passwordTextField.text!
+//        email = "hezhejin1227@gmail.com"
+//        password = "123"
         
         if email == "" {
             createAlert(title: "Warning!", message: "Please input Email.")
@@ -88,16 +90,20 @@ class SignInViewController: UIViewController {
                             if let data = responseDic["data"] as? Dictionary<String, Any> {
                                 Global.firstname = data["first_name"] as! String
                                 Global.lastname = data["surname"] as! String
-                                Global.avatar_url = data["profile_pic"] as! String
+                                if let profile_pic = data["profile_pic"] as? String {
+                                    Global.avatar_url = profile_pic
+                                } else {
+                                    Global.avatar_url = ""
+                                }
                                 Global.user_id = data["num"] as! String
-                                
+                                Global.is_purchased = data["is_purchase"] as! String
                             }
                             succ_bool = true
                         } else {
                             self.createAlert(title: "Warning!", message: "Your Email/Password is incorrect. Please try again.")
                         }
                     } else {
-                        
+                       self.createAlert(title: "Warning!", message: "unknown error.")
                     }
                 }
             } else {
@@ -106,9 +112,16 @@ class SignInViewController: UIViewController {
             DispatchQueue.main.async {
                 self.stopActivityIndicator()
                 if succ_bool {
-                    let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let categoryVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
-                    self.navigationController?.pushViewController(categoryVC, animated: true)
+                    var mainStoryboard = UIStoryboard()
+                    if UIDevice.current.userInterfaceIdiom == .pad {
+                        mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+                        let categoryVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryiPadViewController") as! CategoryiPadViewController
+                        self.navigationController?.pushViewController(categoryVC, animated: true)
+                    } else {
+                        mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let categoryVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+                        self.navigationController?.pushViewController(categoryVC, animated: true)
+                    }
                 }
             }
         }
@@ -117,13 +130,23 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func forgotButtonAction(_ sender: Any) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var mainStoryboard = UIStoryboard()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+        } else {
+            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        }
         let forgotVC = mainStoryboard.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
         self.navigationController?.pushViewController(forgotVC, animated: true)
     }
     
     @IBAction func signupButtonAction(_ sender: Any) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var mainStoryboard = UIStoryboard()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+        } else {
+            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        }
         let signupVC = mainStoryboard.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         self.navigationController?.pushViewController(signupVC, animated: true)
     }

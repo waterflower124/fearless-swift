@@ -64,15 +64,17 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.7.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - FSPagerView
   - Kingfisher (~> 5.0)
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
@@ -85,6 +87,8 @@ SPEC REPOS:
     - Kingfisher
     - nanopb
     - Protobuf
+  trunk:
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
@@ -99,7 +103,8 @@ SPEC CHECKSUMS:
   Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 09ee6ba16717a806bc519d3b964d0f50332ada09
+PODFILE CHECKSUM: 2aa41aa0a83d6f9f2d063243e6bbbf0ebee9f246
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.9.1

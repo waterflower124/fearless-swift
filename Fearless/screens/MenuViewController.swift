@@ -24,6 +24,7 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var purchaseButton: UIButton!
     @IBOutlet weak var aboutusButton: UIButton!
     @IBOutlet weak var contactusButton: UIButton!
     @IBOutlet weak var signoutButton: UIButton!
@@ -40,6 +41,8 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(MenuViewController.imageTapped))
         self.avatar_imageview.addGestureRecognizer(pictureTap)
         self.avatar_imageview.isUserInteractionEnabled = true
+        
+        IAPService.shared.getProducts()
 
     }
     
@@ -177,18 +180,42 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     @IBAction func MenuButtonsAction(_ sender: UIButton) {
         
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var mainStoryboard = UIStoryboard()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            mainStoryboard = UIStoryboard(name: "MainiPad", bundle: nil)
+        } else {
+            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        }
         if sender == self.signoutButton {
             UserDefaults.standard.set(false, forKey: "signin")
             let destVC = mainStoryboard.instantiateViewController(withIdentifier: "SplashViewController") as! SplashViewController
             self.navigationController?.pushViewController(destVC, animated: true)
         } else if sender == self.categoryButton {
-            let destVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
-            self.navigationController?.pushViewController(destVC, animated: true)
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                let destVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryiPadViewController") as! CategoryiPadViewController
+                self.navigationController?.pushViewController(destVC, animated: true)
+            } else {
+                let destVC = mainStoryboard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+                self.navigationController?.pushViewController(destVC, animated: true)
+            }
         } else if sender == self.favoriteButton {
             let destVC = mainStoryboard.instantiateViewController(withIdentifier: "FavoritesViewController") as! FavoritesViewController
             self.navigationController?.pushViewController(destVC, animated: true)
-        } else if sender == self.aboutusButton {
+        } else if sender == self.purchaseButton {
+           
+            let alert = UIAlertController(title: "Notice!", message: "Do you want purchase or restore previous purchase?", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Purchase", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)
+                IAPService.shared.purchase(product: .nonconsumable)
+            }))
+            alert.addAction(UIAlertAction(title: "Restore", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)
+                IAPService.shared.restorePurchase()
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if sender == self.aboutusButton {
             let destVC = mainStoryboard.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
             self.navigationController?.pushViewController(destVC, animated: true)
         } else if sender == self.contactusButton {
